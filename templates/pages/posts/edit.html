@@ -1,0 +1,11 @@
+<user></user>
+<div ng-controller="PostController as PsCtrl">
+    <div id="editpage">
+        <div> Image:</div>
+        <img id="editimage" ng-src="{{PsCtrl.myService.Image}}" />
+        <div> Edit Text:</div>
+        <textarea id="postedit" ng-model="PsCtrl.myService.posttext"></textarea>
+        <button id="editsave" ng-click="PsCtrl.editPost()">Save</button>
+        <button id="backToPosts" ng-click="PsCtrl.rerouteToPosts()">Back</button>
+    </div>
+</div>

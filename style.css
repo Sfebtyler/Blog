@@ -1,0 +1,225 @@
+body {
+    background-color: #00ace6;
+}
+
+body em.pull-right.ng-binding{
+    line-height: 0 !important;
+}
+
+.select-image-input::-webkit-file-upload-button {
+    display: none;
+}
+
+.select-image-input {
+    position: relative;
+    width: 100px;
+    height: 30px;
+}
+
+.select-image-input::before {
+    content: 'Select Image';
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.select-image-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.select-image-input:hover::before {
+    border-color: black;
+}
+
+
+div#login-div {
+    padding-top: 20px;
+    height: 23%;
+    width: 20%;
+    position: absolute;
+    border: 1px solid #0099cc;
+    border-radius: 5px;
+    background-color: #ccf2ff;
+    top: 5%;
+    left: 2%;
+    text-align: center;
+}
+
+div#account-info-div {
+    font-weight: bold;
+    text-align: center;
+}
+
+div#createIsValid {
+    color: red;
+}
+
+textarea#postedit {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+div#user-info {
+
+    border: 1px solid #0099cc;
+    position: fixed;
+    top: 3%;
+    left: 1%;
+    font-size: 150%;
+    height: 150px;
+    width: 300px;
+    background-color: #e6ffff;
+    border-radius: 5px;
+}
+
+body ul#blog-list {
+    width: 60%;
+    margin: auto;
+    list-style-type: none
+}
+
+::-webkit-scrollbar {
+    background-color: #ccf2ff;
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e6ffff;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0099cc;
+    border-radius: 10px;
+    background: radial-gradient(#66d9ff, #0099cc);
+
+}
+
+div#postdiv {
+    border: 1px solid #0099cc;
+    border-radius: 5px;
+    height: 100px;
+    width: 800px;
+    background-color: #e6ffff;
+    padding: 5px;
+    word-wrap: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 120%;
+
+}
+
+div#post {
+    top: 5%;
+}
+
+img#postimage {
+    float: left;
+    height: 88px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+img#editimage {
+    height: 88px;
+    width: 90px;
+}
+
+body li {
+    padding-bottom: 15px;
+}
+
+body div#post-create {
+    width: 60%;
+    margin: auto;
+    padding: 43px;
+}
+
+body textarea#input {
+    width: 800px;
+    height: 100px;
+    border: 1px solid #0099cc;
+    border-radius: 5px;
+    border-color: #0099cc;
+    padding: 0px 5px;
+    line-height: 2;
+    background-color: white;
+    overflow: auto;
+    background-repeat: no-repeat;
+    padding-left:5px;
+}
+
+
+div#noPosts {
+    font-weight: 700;
+    font-size: 150%;
+}
+
+
+textarea#postedit {
+    display: block;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+button#editsave {
+
+}
+
+button#backToPosts {
+
+}
+
+div#editpage {
+    width: 60%;
+    height: relative;
+    margin: auto;
+    margin-top: 150px;
+    overflow: hidden;
+    border: 1px solid gray;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+div#createuser {
+    padding-top: 20px;
+    height: 23%;
+    width: 20%;
+    position: absolute;
+    border: 1px solid #0099cc;
+    border-radius: 5px;
+    background-color: #ccf2ff;
+    top: 5%;
+    left: 2%;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:1440px){
+    div#user-info {
+        position: relative;
+        width: 300px;
+        margin: auto;
+}
+
+    div#post {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+
+}

@@ -1,0 +1,21 @@
+<div id="PsCtrl" ng-controller="PostController as PsCtrl">
+    <user></user>
+    <div id="post">
+        <div id="post-create">
+            <span style="color: white;">Tell us what you're thinking.</span>
+            <div>
+                 <textarea ng-model="PsCtrl.createPostText" id="input" placeholder="Your post goes here..."></textarea>
+            </div>
+            <div><input type="file" image-model="myImage" class="select-image-input" /><button ng-click="PsCtrl.createPost(createPostText)">Post</button></div>
+
+        </div>
+        <ul id="blog-list">
+                <div id="noPosts" ng-if="PsCtrl.myService.noPosts">You have no posts!</div>
+             <li ng-repeat="post in PsCtrl.posts">
+                  <span>{{post.title}}</span>
+                  <div id="postdiv" ng-click="PsCtrl.rerouteToEdit(post.id, post.posttext)"><img id="postimage" ng-src="{{post.postimage}}"/>{{post.posttext}}</div>
+                  <span style="color: white;"><button style="color: black !important;" ng-click="PsCtrl.deletePost(post.id)">delete</button> Posted by {{post.createdby}} on {{post.createdon | date : 'MMM d hh:mm a y'}}</span>
+             </li>
+        </ul>
+    </div>
+</div>

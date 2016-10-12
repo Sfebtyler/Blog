@@ -1,0 +1,8 @@
+<div id="createuser">
+    <div><input ng-model="UsCtrl.myService.usernamecreate" placeholder="Username" required="true"></div>
+    <div><input ng-model="UsCtrl.myService.emailcreate" placeholder="Email"></div>
+    <div><input ng-model="UsCtrl.myService.passwordcreate" placeholder="Password" required="true"></div>
+    <div><button ng-click="UsCtrl.createUser()">submit</button><button ng-click="UsCtrl.rerouteToLogin()">Back</button></div>
+    <div id="createIsValid" ng-show="UsCtrl.myService.createIsValid"> Please use all of the fields! </div>
+
+</div>
